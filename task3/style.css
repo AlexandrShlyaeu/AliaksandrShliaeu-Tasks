@@ -22,7 +22,7 @@ p{
 
 div.wraper{
   background: url("s1200.webp") center fixed no-repeat;
-  
+  background-size: 100%;
 }
 h2{
   font-family: Arial, Helvetica, sans-serif;
