@@ -1,0 +1,35 @@
+html{
+  font-size: 14
+}
+li{
+  display: inline-block;
+  background-color: #fff;
+  border: 0.1rem solid black;
+  padding: 20px;
+  margin: 1rem;
+}
+li:nth-child(2n){
+  background-color: green;
+}
+a:visited{
+  color: black;
+}
+p{
+  font-family: Lobster, Arial, Helvetica, sans-serif;
+  margin-left: 1rem;
+  
+}
+
+div.wraper{
+  background: url("s1200.webp") center fixed no-repeat;
+  
+}
+h2{
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 20px;
+
+}
+span{
+  font-style: italic;
+  color: red;
+}
