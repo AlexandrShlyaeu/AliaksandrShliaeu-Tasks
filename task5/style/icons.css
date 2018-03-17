@@ -1,0 +1,86 @@
+.icon{
+  width: 84px; 
+  height: 84px;
+  float: left;
+  user-select: none;
+  /* clear: both; */
+  background: url("../img/spice-social-gadget-sprite.png") no-repeat;
+  /* background-size: 30%; */
+
+}
+.fb_trns {
+  background-position: 0px 0px;}
+.fb_clr {
+  background-position: 0px -84px;}
+.fb_blk {
+  background-position: 0px -168px;}
+
+.dot_trns {
+  background-position: -84px 0px;}
+.dot_clr {
+  background-position: -84px -84px;}
+.dot_blk {
+  background-position: -84px -168px;}
+
+.ball_trns {
+  background-position: -168px 0px;}
+.ball_clr {
+  background-position: -168px -84px;}
+.ball_blk {
+  background-position: -168px -168px;}
+
+.ggl_trns {
+  background-position: -252px 0px;}
+.ggl_clr {
+  background-position: -252px -84px;}
+.ggl_blk {
+  background-position: -252px -168px;}
+
+.lnk_trns {
+  background-position: -336px 0px;}
+.lnk_clr {
+  background-position: -336px -84px;}
+.lnk_blk {
+  background-position: -336px -168px;}
+
+.pntrst_trns {
+  background-position: -420px 0px;}
+.pntrst_clr {
+  background-position: -420px -84px;}
+.pntrst_blk {
+  background-position: -420px -168px;}
+
+.rss_trns {
+  background-position: -504px 0px;}
+.rss_clr {
+  background-position: -504px -84px;}
+.rss_blk {
+  background-position: -504px -168px;}
+
+.skp_trns {
+  background-position: -588px 0px;}
+.skp_clr {
+  background-position: -588px -84px;}
+.skp_blk {
+  background-position: -588px -168px;}
+
+.twtr_trns {
+  background-position: -672px 0px;}
+.twtr_clr {
+  background-position: -672px -84px;}
+.twtr_blk {
+  background-position: -672px -168px;}
+
+.vimio_trns {
+  background-position: -756px 0px;}
+.vimio_clr {
+  background-position: -756px -84px;}
+.vimio_blk {
+  background-position: -756px -168px;}
+
+.ytb_trns {
+  background-position: -840px 0px;}
+.ytb_clr {
+  background-position: -840px -84px;}
+.ytb_blk {
+  background-position: -840px -168px;}
