@@ -1,8 +1,56 @@
 extends ../template
+include ../_mixins/_mixins
 
 block variables
-    - var title = 'HW6-EpamFE'
+    - var title = 'HW6_Epam-FE'
 
 block content
-    h1 Проверка
-    
+    .hw6-wraper.hw6-wraper_centered
+        .hw6-header.hw6-wraper_centered
+            .hw6-background.hw6-background_positioned
+                .hw6-background__row.hw6-wraper_centered
+                    +icon(["trns"],["fb", "fkl","db", "gl", "in", "pi" ,"rss", "sk", "tw","fb", "fkl","db", "gl", "in", "pi"])
+                .hw6-background__row.hw6-wraper_centered
+                    +icon(["clr"],["fb", "fkl","db", "gl", "in", "pi" ,"rss", "sk", "tw","fb", "fkl","db", "gl", "in", "pi"])
+                .hw6-background__row.hw6-wraper_centered    
+                    +icon(["blk"],["fb", "fkl","db", "gl", "in", "pi" ,"rss", "sk", "tw","fb", "fkl","db", "gl", "in", "pi"])
+            .hw6-hero.hw6-hero__title.hw6-wraper_centered
+                span.hw6-hero__text.hw6-wraper_centered
+                        | Social Sprites Icons
+        section.hw6-midle
+            .hw6-midle__wrapper.hw6-container.hw6-wraper_centered
+                .hw6-container__box.hw6-container__box_white
+                    .hw6-buttons_row
+                        .hw6-buttons__separater
+                            button.hw6-buttons.hw6-buttons_pink.hw6-buttons_big Pink Button
+                        .hw6-buttons__separater
+                            button.hw6-buttons.hw6-buttons_green.hw6-buttons_medium Green Button
+                    .hw6-buttons_row
+                        .hw6-buttons__separater
+                            button.hw6-buttons.hw6-buttons_blue.hw6-buttons_medium Blue Button
+                        .hw6-buttons__separater
+                            button.hw6-buttons.hw6-buttons_red.hw6-buttons_medium Red Button
+                    .hw6-buttons_row
+                        .hw6-buttons__separater
+                            button.hw6-buttons.hw6-buttons_orange.hw6-buttons_medium Orange Button
+                        .hw6-buttons__separater
+                            button.hw6-buttons.hw6-buttons_yellow.hw6-buttons_medium Yellow Button
+                .hw6-container__box.hw6-container__box_dark
+                    .hw6-buttons_row
+                        .hw6-buttons__separater
+                            button.hw6-buttons.hw6-buttons_pink.hw6-buttons_big Pink Button
+                        .hw6-buttons__separater
+                            button.hw6-buttons.hw6-buttons_green.hw6-buttons_medium Green Button
+                    .hw6-buttons_row
+                        .hw6-buttons__separater
+                            button.hw6-buttons.hw6-buttons_blue.hw6-buttons_small Blue Button
+                        .hw6-buttons__separater
+                            button.hw6-buttons.hw6-buttons_red.hw6-buttons_medium Red Button
+                    .hw6-buttons_row
+                        .hw6-buttons__separater
+                            button.hw6-buttons.hw6-buttons_orange.hw6-buttons_small Orange Button
+                        .hw6-buttons__separater
+                            button.hw6-buttons.hw6-buttons_yellow.hw6-buttons_small Yellow Button
+
+
+

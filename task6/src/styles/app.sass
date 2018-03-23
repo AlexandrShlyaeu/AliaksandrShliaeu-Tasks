@@ -1,3 +1,231 @@
-@import 'common/menu'
-@import 'common/technologies'
-@import 'common/slider'
+
+@font-face 
+  font-family: "Mistral"
+  src: url(../fonts/Mistral.eot?) format("eot"), url("../fonts/Mistral.woff") format("woff"), url("/fonts/Mistral.ttf") format("truetype"), url("/font/Mistral.svg#Mistral") format("svg")
+
+.hw6-wraper
+  flex-direction: column
+  &_centered
+    display: flex
+    align-items: center
+    justify-content: center
+
+.hw6-header
+  height: 200px
+  
+
+.hw6-hero
+  
+  font-family: Mistral, sans-serif, Times
+  font-size: 40px
+  background-color: rgba(254,254,254,0.95)
+  border: solid 1px #FFF
+  box-shadow: 0 0 1px #cacac9
+  z-index: 1000
+  &__title
+    position: absolute;
+
+    margin-left: -150px
+    left: 50%
+    top: 65px
+    z-index: 2
+
+    width: 300px
+    height: 76px
+    
+  &__box
+    width: 289px
+    height: 66px
+  &__text
+    border: 2px solid #000
+    box-shadow: inset -1px -1px grey, -1px -1px grey, 0 -1px grey, -1px 0 grey
+    // background: url("../images/Camouflage.jpg")
+    background-size: 110%
+    background-clip: text
+    color: black 
+    padding: 7px 29px
+
+.hw6-background
+  background-color: #f5f5f2
+  &__positioned
+    position: absolute
+    overflow: hidden
+    width: 955px
+    height: 225px
+    top: -25px
+  &__row
+    flex-direction: row
+    transform: rotate(-5deg)
+
+.hw6-social
+  background: url("../images/spice-social-gadget-sprite.png") no-repeat
+  &_size-medium
+    display: inline-flex
+    overflow: hidden
+    width: 80px
+    height: 80px
+    margin: -6px
+    transform-origin: 0 0
+    transform: scale(0.5)
+    z-index: 2
+    border-radius: 15px
+  &__icon
+    &_trns
+      &-fb
+        background-position: -2px -2px
+      &-fkl
+        background-position: -86px -2px
+      &-gl
+        background-position: -254px -2px
+      &-db
+        background-position: -170px -2px
+      &-in
+        background-position: -338px -2px
+      &-pi
+        background-position: -422px -2px
+      &-rss
+        background-position: -506px -2px
+      &-sk
+        background-position: -590px -2px
+      &-tw
+        background-position: -674px -2px
+    &_clr
+      &-fb
+        background-position: -2px -86px
+      &-fkl
+        background-position: -86px -86px
+      &-gl
+        background-position: -254px -86px
+      &-db
+        background-position: -170px -86px
+      &-in
+        background-position: -338px -86px
+      &-pi
+        background-position: -422px -86px
+      &-rss
+        background-position: -506px -86px
+      &-sk
+        background-position: -590px -86px
+      &-tw
+        background-position: -674px -86px
+    &_blk
+      &-fb
+        background-position: -2px -170px
+      &-fkl
+        background-position: -86px -170px
+      &-gl
+        background-position: -170px -170px
+      &-db
+        background-position: -254px -170px
+      &-in
+        background-position: -338px -170px
+      &-pi
+        background-position: -422px -170px
+      &-rss
+        background-position: -506px -170px
+      &-sk
+        background-position: -590px -170px
+      &-tw
+        background-position: -674px -170px
+
+.hw6-midle
+
+.hw6-container
+  padding: 7px 4px 0 7px
+  flex-direction: column
+  &__box
+    width: 915px
+    margin-bottom: 10px
+    padding-left: 25px
+    padding-top: 20px
+    &_white
+      border: 1px solid #eaeaea
+      background-color: #FFF
+      z-index: -1
+    &_dark
+      border: none
+      background-color: #333
+      z-index: -1
+
+.hw6-buttons_row
+    display: flex
+    flex-direction: row
+    margin: 15px
+    
+.hw6-buttons
+  vertical-align: bottom
+  font-weight: bold
+  color: #fff
+  border-radius: 5px
+  box-shadow: 0 1.5px 2px rgba(0,0,0,.6)
+  cursor: pointer
+  // opacity: .7
+  user-select: none
+  box-sizing: border-box
+  &::hover
+    opacity: 1
+  &_pink
+    background: linear-gradient(to bottom, #e956ab 0%, #e52094 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e956ab', endColorstr='#e52094',GradientType=0 )
+    border-bottom: 1px solid #c40877
+    border-top: 1px solid #e743a3
+    &::hover
+      background: linear-gradient(to bottom, #e52094 0%, #e956ab 100%)
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e52094', endColorstr='#e956ab',GradientType=0 )
+
+  &_green
+    background: linear-gradient(to bottom, #abcc43 0%, #9dc819 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#abcc43', endColorstr='#9dc819',GradientType=0 )
+    border-bottom: 1px solid #7d8b52
+    border-top: 1px solid #cadb98
+    &::hover
+      background: linear-gradient(to bottom, #9dc819 0%, #abcc43 100%)
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dc819', endColorstr='#abcc43',GradientType=0 )
+
+  &_blue
+    background: linear-gradient(to bottom, #5d9ee9 0%, #3f8fe9 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d9ee9', endColorstr='#3f8fe9',GradientType=0 )
+    border-bottom: 1px solid #2471c8
+    border-top: 1px solid #4a95e9
+    &::hover
+      background: linear-gradient(to bottom, #3f8fe9 0%, #5d9ee9 100%)
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f8fe9', endColorstr='#5d9ee9',GradientType=0 )
+
+  &_red
+    background: linear-gradient(to bottom, #ec5b5b 0%, #eb3d3d 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec5b5b', endColorstr='#eb3d3d',GradientType=0 )
+    border-bottom: 1px solid #cb2222
+    border-top: 1px solid #ea4949
+    &::hover
+      background: linear-gradient(to bottom, #eb3d3d 0%, #ec5b5b 100%)
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb3d3d', endColorstr='#ec5b5b',GradientType=0 )
+
+  &_orange
+    background: linear-gradient(to bottom, #ff823e 0%, #ff6e1a 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff823e', endColorstr='#ff6e1a',GradientType=0 )
+    border-bottom: 1px solid #e15000
+    border-top: 1px solid #ff7628
+    &::hover
+      background: linear-gradient(to bottom, #ff6e1a 0%, #ff823e 100%)
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6e1a', endColorstr='#ff823e',GradientType=0 )
+
+  &_yellow
+    background: linear-gradient(to bottom, #ffc74c 0%, #ffbe2d 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc74c', endColorstr='#ffbe2d',GradientType=0 )
+    border-bottom: 1px solid #e19f12
+    border-top: 1px solid #ffc139
+    &::hover
+      background: linear-gradient(to bottom, #ff6e1a 0%, #ff823e 100%)
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6e1a', endColorstr='#ff823e',GradientType=0 )
+
+      
+  &_big
+    font-size: 24px
+    padding: 3px
+  &_medium
+    font-size: 18px
+    padding: 2px
+  &_small
+    font-size: 12px
+    padding: 1px
+  

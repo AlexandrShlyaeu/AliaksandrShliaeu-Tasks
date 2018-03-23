@@ -27,6 +27,10 @@ const paths = {
         src: 'src/images/**/*.*',
         dest: 'build/assets/images/'
     },
+    fonts: {
+        src: 'src/fonts/**/*.*',
+        dest: 'build/assets/fonts/'
+    },
     scripts: {
         src: 'src/scripts/**/*.js',
         dest: 'build/assets/scripts/'
@@ -40,11 +44,11 @@ function templates() {
         .pipe(gulp.dest(paths.root));
 }
 
-// scss
+// sass
 function styles() {
     return gulp.src('./src/styles/app.sass')
         .pipe(sourcemaps.init())
-        // .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(sass({outputStyle: 'compressed'}))
         .pipe(sourcemaps.write())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest(paths.styles.dest))
@@ -83,14 +87,26 @@ function images() {
     return gulp.src(paths.images.src)
         .pipe(gulp.dest(paths.images.dest));
 }
+//переносим фонты
+function fonts() {
+    return gulp.src(paths.fonts.src)
+        .pipe(gulp.dest(paths.fonts.dest));
+}
 
+//переносим normalize
+function normalize() {
+    return gulp.src('src/styles/common/normalize.css')
+        .pipe(gulp.dest('build/assets/styles/'));
+}
 exports.templates = templates;
 exports.styles = styles;
 exports.clean = clean;
 exports.images = images;
+exports.fonts = fonts;
+exports.normalize = normalize;
 
 gulp.task('default', gulp.series(
     clean,
-    gulp.parallel(styles, templates, images, scripts),
+    gulp.parallel(styles, templates, images, scripts,fonts,normalize),
     gulp.parallel(watch, server)
 ));
