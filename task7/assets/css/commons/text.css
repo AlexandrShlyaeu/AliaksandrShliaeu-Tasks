@@ -1,0 +1,48 @@
+.fp-text {
+}
+
+.fp-text_main-title {
+	font-size: 3rem;
+	font-weight: 400;
+	line-height: 1.2;
+}
+.fp-text_subtitle {
+	margin: 15px 0 30px;
+}
+
+.fp-text_paragraph {
+	margin: 15px;
+}
+
+.fp-text_color_grey {
+	color: #9e9391;
+}
+.fp-text_color_сoral {
+	color: #e9714c;
+}
+.fp-text_color_orange {
+	color: #e4ae58;
+}
+.fp-text_color_black {
+	color: #161616;
+}
+.fp-text_color_white {
+	color: #fff;
+}
+
+.fp-about_subtitle {
+	margin: 15px 30px 0  0;
+}
+
+.fp-about_paragraph{
+	margin-top: 15px;
+}
+
+.fp-text_strong {
+	font-weight: 500;
+}
+
+.fp-progress-bar__text{
+  font-size: 1rem;
+  font-weight: bold;
+}
