@@ -36,7 +36,7 @@ body{
 	min-height: 100vh;
 	overflow: hidden;
 	min-width: 360px;
-	max-width: 1600px;
-	margin: 0 auto;
+	/* max-width: 1600px;
+	margin: 0 auto; */
 }
 
